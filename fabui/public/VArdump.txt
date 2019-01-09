@@ -1,0 +1,127 @@
+<?php echo var_dump($this->session->userdata());
+
+["__ci_last_regenerate"]=>
+  int(1539143128)
+  ["id"]=>
+  string(5) "19715"
+  ["Registration_Number"]=>
+  string(15) "RA1611004010605"
+  ["Student_Name"]=>
+  string(9) "Abhay S V"
+  ["role"]=>
+  string(7) "student"
+  ["last_login"]=>
+  string(22) "2018-10-10 05:01:26 AM"
+  ["status"]=>
+  string(8) "approved"
+  ["dob"]=>
+  string(7) "12/8/97"
+  ["Date_of_Birth"]=>
+  string(9) "08-Dec-97"
+  ["Gender"]=>
+  string(4) "Male"
+  ["Campus"]=>
+  string(10) "ANNEXURE-I"
+  ["Program"]=>
+  string(6) "B.Tech"
+  ["dep"]=>
+  string(41) "Electronics and Communication Engineering"
+  ["Department"]=>
+  string(41) "Electronics and Communication Engineering"
+  ["Specialization"]=>
+  NULL
+  ["Date_of_Enrollment"]=>
+  string(9) "02-Jul-18"
+  ["Faculty_Advisor"]=>
+  string(31) "101561 - Ms.Diana Emerald Aasha"
+  ["Academic_Advsior"]=>
+  string(23) "100258 - Dr.M.Sangeetha"
+  ["Parent_Name"]=>
+  string(8) "V SANJAY"
+  ["Communication_Address"]=>
+  string(87) "HOUSE NO. 38, SALARIA OFFICERS ENCLAVE DWARKA SECTOR -21 NEW DELHI Dwarka Delhi- 110075"
+  ["email"]=>
+  string(27) "abhay_sanjay@srmuniv.edu.in"
+  ["Semester"]=>
+  string(1) "5"
+  ["Mobile_Number"]=>
+  string(10) "8447750103"
+  ["Mech_Group"]=>
+  NULL
+  ["Batch"]=>
+  string(1) "2"
+  ["Combo"]=>
+  string(1) "1"
+  ["Combo_New"]=>
+  string(1) "2"
+  ["SetData"]=>
+  string(2) "18"
+  ["GroupData"]=>
+  string(1) "1"
+  ["Help_String"]=>
+  string(27) "RA1611004010605 - ABHAY S V"
+  ["Enrollment_Date"]=>
+  string(9) "14-Jul-16"
+  ["E_Date"]=>
+  string(9) "14-Jul-16"
+  ["Active"]=>
+  string(4) "true"
+  ["Is_Moved_to_Master"]=>
+  string(5) "false"
+  ["Remarks"]=>
+  NULL
+  ["Fee_Dues"]=>
+  string(5) "false"
+  ["Elective_Status"]=>
+  string(5) "false"
+  ["Feedback_Update"]=>
+  string(4) "true"
+  ["Credits"]=>
+  NULL
+  ["Current_Credits"]=>
+  string(2) "25"
+  ["First_Year_Registration_Status"]=>
+  string(4) "true"
+  ["Mapping_Update_Status"]=>
+  string(5) "false"
+  ["Parents_Contact_Number"]=>
+  string(10) "8447750103"
+  ["Parent_Email"]=>
+  string(34) "sanjay_vidhyadharan@rediffmail.com"
+  ["YOJ"]=>
+  NULL
+  ["YearData"]=>
+  NULL
+  ["Sem"]=>
+  NULL
+  ["OE"]=>
+  string(1) "1"
+  ["DE"]=>
+  string(1) "1"
+  ["Sem3_Credit"]=>
+  NULL
+  ["Yr1Credit"]=>
+  string(2) "49"
+  ["Yr2Credit"]=>
+  NULL
+  ["UpdateData"]=>
+  string(5) "false"
+  ["FIELD49"]=>
+  NULL
+  ["FIELD50"]=>
+  NULL
+  ["FIELD51"]=>
+  NULL
+  ["FIELD52"]=>
+  NULL
+  ["FIELD53"]=>
+  NULL
+  ["FIELD54"]=>
+  NULL
+  ["FIELD55"]=>
+  NULL
+  ["FIELD56"]=>
+  NULL
+  ["FIELD57"]=>
+  NULL
+}
