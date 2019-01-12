@@ -127,7 +127,7 @@
 .btn-style-four:hover,
 .theme_color,
 a{
-	color: #ff8a00;
+	color: #52dfbb;
 }
 
 /*=== Background Color ===*/
@@ -187,7 +187,7 @@ a{
 .btn-style-six:hover,
 .btn-style-five,
 .btn-style-one{
-	background-color: #ff8a00;
+	background-color: #000000;
 }
 
 /*Border Color*/
@@ -242,20 +242,20 @@ a{
 .btn-style-two,
 .main-menu .navigation > li > ul,
 .main-menu .navigation > li > ul > li > ul{
-	border-color: #ff8a00;
+	border-color: #52dfbb;
 }
 
 /*Box Shadow*/
 .btn-style-three:hover,
 .btn-style-two:hover{
-	box-shadow: #ff8a00 0 0px 0px 40px inset;
+	box-shadow: #52dfbb 0 0px 0px 40px inset;
 }
 
 
 @media only screen and (max-width: 767px){
 	
 	.main-menu .navbar-header .navbar-toggler .icon{
-		color:#ff8a00;
+		color:#52dfbb;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle,
@@ -273,7 +273,7 @@ a{
 	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
-		background-color:#ff8a00;
+		background-color:#52dfbb;
 	}
 	
 }
