@@ -11,23 +11,29 @@ class User_model extends CI_Model {
         $this->roles = $this->config->item('roles');
     }    
     
-    public function insertUser($d)
+    public function setUserPending($d)
     {  
+            
+ 
             $string = array(
-                'Student_Name'=>$d['firstname'],
-                'Registration_Number'=>$d['lastname'],
-                'email'=>$d['email'],
                 'role'=>$this->roles[0], 
                 'status'=>$this->status[0], 
                 'password'=> '', 
                 'last_login'=> ''
             );
-            $q = $this->db->insert_string('users',$string);             
-            $this->db->query($q);
-            return $this->db->insert_id();
+            $this->db->where('email', $d['email']);
+            $this->db->update('users', $string);
+            $success = $this->db->affected_rows(); 
+        
+            if(!$success){
+                error_log('Unable to updateUserInfo('.$d['email'].')');
+                return false;
+            }
+            
+            return TRUE; 
     }
-    
-    public function isDuplicate($email)
+ 
+    public function checkAcamediaEmail($email)
     {     
         $this->db->get_where('users', array('email' => $email), 1);
         return $this->db->affected_rows() > 0 ? TRUE : FALSE;         

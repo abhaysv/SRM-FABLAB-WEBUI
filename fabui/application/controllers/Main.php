@@ -40,29 +40,47 @@ class Main extends CI_Controller {
             $this->load->view('userprofile', $data);
             $this->load->view('footer');
 	}
-        
+    function accept_terms() {
+        if (isset($_POST['accept_terms'])) return true;
+        $this->form_validation->set_message('accept_terms', '<font color="red"><br>PLEASE AGREE TO OUT TEAMS AND CONDITIONS.</font>');
+        return false;
+    }  
         
         public function register()
         {
              
-            $this->form_validation->set_rules('firstname', 'First Name', 'required');
-            $this->form_validation->set_rules('lastname', 'Last Name', 'required');    
-            $this->form_validation->set_rules('email', 'Email', 'required|valid_email');    
+ //           $this->form_validation->set_rules('firstname', 'First Name', 'required');
+ //           $this->form_validation->set_rules('lastname', 'Last Name', 'required');    
+            $this->form_validation->set_rules('email', 'Email', 'required|valid_email');
+            $this->form_validation->set_rules('accept_terms', '...', 'callback_accept_terms');
                        
             if ($this->form_validation->run() == FALSE) {   
                 $this->load->view('header');
                 $this->load->view('register');
                 $this->load->view('footer');
             }else{                
-                if($this->user_model->isDuplicate($this->input->post('email'))){
-                    $this->session->set_flashdata('flash_message', 'User email already exists');
+                if($this->user_model->checkAcamediaEmail($this->input->post('email')) == FALSE){
+                    $this->session->set_flashdata('flash_message', 'Your SRM Emial ID does not exist in our database');
                     redirect(site_url().'main/login');
                 }else{
                     
+                    $email = $this->input->post('email');  
+                    $clean = $this->security->xss_clean($email);
+                    $userInfo = $this->user_model->getUserInfoByEmail($clean);
+
+                    if($userInfo->status == $this->status[1]){ //if status is already avctive
+                        $this->session->set_flashdata('flash_message', 'Your account is already ACTIVE');
+                        redirect(site_url().'main/login');
+                    }
+                    if($userInfo->status == $this->status[0]){ //if status is not activated tocken
+                        $this->session->set_flashdata('flash_message', 'Your account is pending activation check your email');
+                        redirect(site_url().'main/login');
+                    }
+
                     $clean = $this->security->xss_clean($this->input->post(NULL, TRUE));
-                    $id = $this->user_model->insertUser($clean); 
-                    $token = $this->user_model->insertToken($id);                                        
-                    
+                    $id = $this->user_model->setUserPending($clean);
+
+                    $token = $this->user_model->insertToken($userInfo->id); 
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
                     $link = '<a href="' . $url . '">' . $url . '</a>'; 
