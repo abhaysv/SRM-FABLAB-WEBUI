@@ -39,6 +39,8 @@ class User_model extends CI_Model {
         return $this->db->affected_rows() > 0 ? TRUE : FALSE;         
     }
     
+
+    
     public function insertToken($user_id)
     {   
         $token = substr(sha1(rand()), 0, 30); 
@@ -135,7 +137,49 @@ class User_model extends CI_Model {
         unset($userInfo->password);
         return $userInfo; 
     }
-    
+    public function send_email_verify($userInfo,$url)
+    {
+  //      require '../third_party/PHPMailer-master/PHPMailerAutoload.php';
+        require '/home2/siicserv/fablab.siic.co.in/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
+        $mail = new PHPMailer;
+        //$mail->isSMTP();
+        $mail->Host = 'smtp.zoho.com';
+        $mail->SMTPAuth = true;
+        $mail->Username = 'no-reply@srmiic.com';
+        $mail->Password = 'Killmedude@123';
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;
+
+        $link = '<a href="' . $url . '">' . $url . '</a>'; 
+                           
+        $message = '';
+        $message .= '<strong>Hi</strong> ' . $userInfo->Student_Name;                     
+        $message .= '<strong>You have signed up with our website</strong><br>';
+        $message .= '<strong>Please click:</strong> ' . $link;                          
+
+
+
+
+        $mail->From = 'no-reply@srmiic.com';
+        $mail->FromName = 'SRM FABLAB';
+        $mail->addAddress($userInfo->email);
+
+        $mail->isHTML(true);
+
+        $mail->Subject = 'FABLAB REGISTARTION VERIFICATION!';
+        $mail->Body    = $message;
+
+
+        
+        if(!$mail->send()) {
+            echo 'Message could not be sent. ok';
+            echo 'Mailer Error: ' . $mail->ErrorInfo;
+            return false;
+        } else {
+            echo 'Message has been sent ok';
+            return true;
+        }
+    }
     public function updateLoginTime($id)
     {
         $this->db->where('id', $id);

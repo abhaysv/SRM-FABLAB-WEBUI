@@ -83,13 +83,8 @@ class Main extends CI_Controller {
                     $token = $this->user_model->insertToken($userInfo->id); 
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
-                    $link = '<a href="' . $url . '">' . $url . '</a>'; 
-                               
-                    $message = '';                     
-                    $message .= '<strong>You have signed up with our website</strong><br>';
-                    $message .= '<strong>Please click:</strong> ' . $link;                          
+                    $this->user_model->send_email_verify($userInfo,$url);
 
-                    echo $message; //send this in email
                     exit;
                      
                     
@@ -187,7 +182,7 @@ class Main extends CI_Controller {
             $this->session->sess_destroy();
             redirect(site_url().'main/login/');
         }
-        
+
         public function forgot()
         {
             
