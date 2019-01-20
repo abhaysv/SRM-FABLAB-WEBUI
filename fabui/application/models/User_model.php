@@ -150,13 +150,16 @@ class User_model extends CI_Model {
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-        $link = '<a href="' . $url . '">' . $url . '</a>'; 
-                           
-        $message = '';
-        $message .= '<strong>Hi</strong> ' . $userInfo->Student_Name;                     
-        $message .= '<strong>You have signed up with our website</strong><br>';
-        $message .= '<strong>Please click:</strong> ' . $link;                          
+     //   $link = '<a href="' . $url . '">' . $url . '</a>'; 
+        $link = $url;
 
+        $data = array(
+            'userName'=> $userInfo->Student_Name,
+            'regNo'=> $userInfo->Registration_Number,
+            'link'=> $link
+                );
+       $bodytemp = $this->load->view('emails/verification.php',$data,TRUE);
+                        
 
 
 
@@ -167,16 +170,15 @@ class User_model extends CI_Model {
         $mail->isHTML(true);
 
         $mail->Subject = 'FABLAB REGISTARTION VERIFICATION!';
-        $mail->Body    = $message;
+        $mail->Body    = $bodytemp;
 
 
         
         if(!$mail->send()) {
-            echo 'Message could not be sent. ok';
+            echo 'Message could not be sent. Please contact systems@srmiic.com';
             echo 'Mailer Error: ' . $mail->ErrorInfo;
             return false;
         } else {
-            echo 'Message has been sent ok';
             return true;
         }
     }

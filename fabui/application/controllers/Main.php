@@ -83,8 +83,13 @@ class Main extends CI_Controller {
                     $token = $this->user_model->insertToken($userInfo->id); 
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
-                    $this->user_model->send_email_verify($userInfo,$url);
+                    $email_sent = $this->user_model->send_email_verify($userInfo,$url);
 
+                    if($email_sent){ // if the email is sent the smtp returns true
+                        $this->session->set_flashdata('flash_message', 'An verification email has been sent to your email, In case you havent recieved it pls check SPAM');
+                        redirect(site_url().'main/login');
+                    }
+                    
                     exit;
                      
                     
