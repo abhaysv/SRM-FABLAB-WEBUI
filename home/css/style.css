@@ -1142,8 +1142,8 @@ img{
 	position: relative;
 	display: block;
 	font-size: 16px;
-	padding: 25px 60px;
-	min-height:80px;
+	padding: 0px 40px;
+	min-height:30px;
 	border-radius: 0;
 }
 
@@ -3989,7 +3989,7 @@ img{
 	padding: 10px 25px 8px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #222222;
+	color: #998c8c;
 	background-color: #ffffff;
 	cursor: pointer;
 	border-bottom: 2px solid #ebebeb;
@@ -7811,7 +7811,7 @@ img{
 
 .main-footer{
 	position:relative;
-	background-color: #222222;
+	background-color: rgba(255, 255, 255, 0.05);
 }
 
 .main-footer:before{
@@ -7856,7 +7856,7 @@ img{
 	bottom: 0;
 	height: 1px;
 	width: 60px;
-	background-color: #dddddd;
+	background-color: #ffffff;
 	content: '';
 }
 
@@ -8292,6 +8292,7 @@ img{
 	background-color: #ff8a00;
 	margin-top: -25px;
 	border-radius: 30px;
+	background-color: #f0e5d9;
 }
 
 .social-icon-four:before{
@@ -8300,7 +8301,7 @@ img{
 	top: 0;
 	height: 50px;
 	width: 1000%;
-	background-color: #ff8a00;
+	background-color: #f0e5d9;
 	content: "";
 	border-radius: 30px;
 }
@@ -8317,7 +8318,7 @@ img{
 	font-size: 16px;
 	line-height:30px;
 	padding: 10px 0;
-	color: #222222;
+	color: #ffffff;
 	font-weight: 400;
 	border-radius: 30px;
 	-webkit-transition: all 300ms ease;
