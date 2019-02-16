@@ -1,4 +1,4 @@
-# AttendanceMS FUCKPERIMENTS WORK In Progress BHAI
+# AttendanceMS FUCKPERIMENTS
 Attendance Management System
 * Web App + Android App
 * Offline Attendance Facility in App ( attendance can be taken even when offline).
