@@ -118,6 +118,43 @@ class User_model extends CI_Model {
         $user_info = $this->getUserInfo($post['user_id']); 
         return $user_info; 
     }
+
+    public function Sync_Fabserver($userInfo)
+    {
+        $data = array(
+               'group_id' => '1',
+               'group_name' => 'customer',
+               'customer_group_id' => '1',
+               'customer_group_name' => 'General',
+               'name' => $userInfo->Student_Name,
+               'company' => $userInfo->Registration_Number,
+               'address' => $userInfo->Communication_Address,
+               'city' => $userInfo->Program,               
+               'state' => $userInfo->Department,
+               'postal_code' => $userInfo->Semester,
+               'country' => $userInfo->Faculty_Advisor,
+               'phone' => $userInfo->Mobile_Number,               
+               'email' => $userInfo->email,
+               'payment_term' => '0',
+               'logo' => 'logo.png',
+               'award_points' => '0',
+               'deposit_amount' => '20000.0000',
+               'price_group_id' => '1',
+               'price_group_name' => 'Default',
+            );
+
+        $q = $this->db->insert_string('sma_companies',$data);             
+        $this->db->query($q);
+
+        $success = $this->db->insert_id(); 
+        
+        if(!$success){
+            error_log('Unable to Sync_Fabserver('.$userInfo->Registration_Number.')');
+            return false;
+        }
+        
+        return $success; 
+    }
     
     public function checkLogin($post)
     {
@@ -139,8 +176,8 @@ class User_model extends CI_Model {
     }
     public function send_email_verify($userInfo,$url)
     {
-  //      require '../third_party/PHPMailer-master/PHPMailerAutoload.php';
-        require '/home2/siicserv/fablab.siic.co.in/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
+     //  require '/fablab/fabui/assets/PHPMailer-master/PHPMailerAutoload.php';
+       require '/home2/siicserv/fablab.siic.co.in/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
         $mail = new PHPMailer;
         //$mail->isSMTP();
         $mail->Host = 'smtp.zoho.com';

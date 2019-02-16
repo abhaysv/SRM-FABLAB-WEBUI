@@ -83,6 +83,8 @@ class Main extends CI_Controller {
                     $token = $this->user_model->insertToken($userInfo->id); 
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
+                    // Enable this when want to avoid mail stuff
+                    //echo $url;
                     $email_sent = $this->user_model->send_email_verify($userInfo,$url);
 
                     if($email_sent){ // if the email is sent the smtp returns true
@@ -145,6 +147,13 @@ class Main extends CI_Controller {
                 }
                 
                 unset($userInfo->password);
+
+                $fab_var = $this->user_model->Sync_Fabserver($userInfo);
+
+                if(!$fab_var){
+                    $this->session->set_flashdata('flash_message', 'There was a problem importing your account to FABLAB');
+                    redirect(site_url().'main/login');
+                }
                 
                 foreach($userInfo as $key=>$val){
                     $this->session->set_userdata($key, $val);
