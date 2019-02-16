@@ -150,17 +150,20 @@ class User_model extends CI_Model {
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
-     //   $link = '<a href="' . $url . '">' . $url . '</a>'; 
-        $link = $url;
-
+        $link = $url; 
+                           
+        $message = '';
+        $message .= '<strong>Hi</strong> ' . $userInfo->Student_Name;                     
+        $message .= '<strong>You have signed up with our website</strong><br>';
+        $message .= '<strong>Please click:</strong> ' . $link;
+        
         $data = array(
-            'userName'=> $userInfo->Student_Name,
-            'regNo'=> $userInfo->Registration_Number,
-            'link'=> $link
-                );
-       $bodytemp = $this->load->view('emails/verification.php',$data,TRUE);
-                        
-
+             'userName'=> $userInfo->Student_Name,
+             'regNo'=> $userInfo->Registration_Number,
+             'link'=> $link
+                 );
+        $bodytemp = $this->load->view('emails/verification.php',$data,TRUE);
+        //$this->load->view('emails/verification.php',$data,TRUE);
 
 
         $mail->From = 'no-reply@srmiic.com';
@@ -175,10 +178,11 @@ class User_model extends CI_Model {
 
         
         if(!$mail->send()) {
-            echo 'Message could not be sent. Please contact systems@srmiic.com';
-            echo 'Mailer Error: ' . $mail->ErrorInfo;
+           // echo 'Message could not be sent. ok';
+           // echo 'Mailer Error: ' . $mail->ErrorInfo;
             return false;
         } else {
+          //  echo 'Message has been sent ok';
             return true;
         }
     }

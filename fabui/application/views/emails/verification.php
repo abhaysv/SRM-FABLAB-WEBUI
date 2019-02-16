@@ -310,7 +310,7 @@ a {
                                 </tr>
                                 <tr>
                                     <td class="content-block">
-                                        <h3>Hello <?php echo $userName?> (<?php echo $regNo;?>) Welcom to FABLAB!</h3>
+                                        <h3>Hello <?php echo $userName?> (<?php echo $regNo;?>) Welcome to FABLAB!</h3>
                                     </td>
                                 </tr>
                                 <tr>

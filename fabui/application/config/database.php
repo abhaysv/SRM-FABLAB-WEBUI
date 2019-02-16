@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '35.197.9.232',
-	'username' => 'fablab_user',
-	'password' => 'd4wUUnHpHLtF2fk',
-	'database' => 'siic_fablab',
+	'hostname' => 'localhost',
+	'username' => 'siicserv_abhaysv',
+	'password' => 'Ipconfigx@123',
+	'database' => 'siicserv_fabserver',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
