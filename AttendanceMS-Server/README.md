@@ -1,2 +1,0 @@
-# AttendanceMS
-Attendance Management System
