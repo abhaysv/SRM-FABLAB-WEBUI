@@ -183,7 +183,7 @@ class User_model extends CI_Model {
         $mail->Host = 'smtp.zoho.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'no-reply@srmiic.com';
-        $mail->Password = 'Killmedude@123';
+        $mail->Password = 'ss';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 
