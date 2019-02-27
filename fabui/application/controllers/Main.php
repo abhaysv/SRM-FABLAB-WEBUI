@@ -84,7 +84,7 @@ class Main extends CI_Controller {
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
                     // Enable this when want to avoid mail stuff
-                    //echo $url;
+                    echo $url;
                     $email_sent = $this->user_model->send_email_verify($userInfo,$url);
 
                     if($email_sent){ // if the email is sent the smtp returns true
@@ -158,7 +158,7 @@ class Main extends CI_Controller {
                 foreach($userInfo as $key=>$val){
                     $this->session->set_userdata($key, $val);
                 }
-                redirect(site_url().'main/');
+                redirect(site_url().'assets/complete.html');
                 
             }
         }
