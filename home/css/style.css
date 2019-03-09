@@ -377,6 +377,7 @@ ul,li{
 	position: relative;
 	display: block;
 	margin-bottom: 30px;
+	background-color: red;
 }
 
 .list-style-one li{
@@ -3031,7 +3032,7 @@ img{
 	width: 100%;
 	padding: 30px 30px;
 	background-color: #ffffff;
-	top: -45px;
+	top: 0px;
 	-webkit-box-shadow: 0 0 24px rgba(0,0,0,0.09);
 	-moz-box-shadow: 0 0 24px rgba(0,0,0,0.09);
 	-ms-box-shadow: 0 0 24px rgba(0,0,0,0.09);
@@ -3734,7 +3735,7 @@ img{
 	line-height:30px;
 	color:#777777;
 	margin-bottom:0px;
-}
+} 
 
 /*Services Category*/
 
@@ -10872,3 +10873,9 @@ img{
 	width:200px;
 	height:60px;
 }
+
+
+  .image-box img{
+  	width: 100%;
+  	height: 90vh;
+  }

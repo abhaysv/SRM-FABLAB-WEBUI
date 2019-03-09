@@ -32,12 +32,13 @@ class Main extends CI_Controller {
 	{   
             if(empty($this->session->userdata['email'])){
                 redirect(site_url().'main/login/');
-            }            
+            }
+            //$this->load->library('PHPtoJS',['namespace' => 'arjun']);            
             /*front page*/
-            $data = $this->session->userdata;
-             
+            //$data = $this->session->userdata;
+            
             $this->load->view('header');            
-            $this->load->view('userprofile', $data);
+            $this->load->view('userprofile');
             $this->load->view('footer');
 	}
     function accept_terms() {

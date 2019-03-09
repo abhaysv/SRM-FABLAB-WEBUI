@@ -46,6 +46,9 @@ defined('BASEPATH') OR exit('No direct path allowed')
     <link href="<?php echo base_url()."assets/";?>plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
 
 
+    
+
+
 
 
 
