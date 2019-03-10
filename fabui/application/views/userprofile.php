@@ -957,12 +957,24 @@ defined('BASEPATH') OR exit('No direct path allowed');
                                     <!--Menu list item-->
                                     <li>
                                         <a href="#" class="about-info">
-                                            <i class="demo-psi-home"></i>
-                                            <span class="menu-title">Male</span>
+                                            <?php
+                                                if($this->session->userdata('Gender') == 'Male'){
+                                                    echo 
+                                                        '<i class="fas fa-male" style="font-size:18px;"></i>
+                                                        <span class="menu-title">'.$this->session->userdata('Gender').'</span>';
+                                                }
+                                                else if($this->session->userdata('Gender') == 'Female'){
+                                                    echo 
+                                                        '<i class="fas fa-female" style="font-size:18px;"></i>
+                                                        <span class="menu-title">'.$this->session->userdata('Gender').'</span>';
+                                                }
+                                            ?>
+                                            
+                                            
                                             <!-- <i class="arrow"></i> -->
-                                            &emsp;&emsp;
-                                            <i class="demo-psi-home"></i>
-                                            <span class="menu-title">03/03/1998</span>
+                                            &emsp;&nbsp;
+                                            <i class="fas fa-birthday-cake" style="font-size:15px;"></i>
+                                            <span class="menu-title"><?php echo $this->session->userdata('Date_of_Birth'); ?></span>
                                            <!--   <i c -->
                                         </a>
                         
@@ -977,8 +989,8 @@ defined('BASEPATH') OR exit('No direct path allowed');
 
                                       <li>
                                         <a href="#" class="about-info">
-                                            <i class="demo-psi-home"></i>
-                                            <span class="menu-title">9876543210</span>
+                                            <i class="fas fa-mobile-alt" style="font-size:15px;"></i>
+                                            <span class="menu-title"><?php echo $this->session->userdata('Mobile_Number'); ?></span>
                                             <!-- <i class="arrow"></i> -->
                                         </a>
                         
@@ -993,8 +1005,8 @@ defined('BASEPATH') OR exit('No direct path allowed');
 
                                       <li>
                                         <a href="#" class="about-info">
-                                            <i class="demo-psi-home"></i>
-                                            <span class="menu-title">example@example.com</span>
+                                            <i class="fas fa-envelope-square" style="font-size:15px;"></i>
+                                            <span class="menu-title"><?php echo $this->session->userdata('email'); ?></span>
                                             <!-- <i class="arrow"></i> -->
                                         </a>
                         
@@ -1007,12 +1019,12 @@ defined('BASEPATH') OR exit('No direct path allowed');
                                         </ul> -->
                                     </li>
 
-                                      <li>
+                                     <!--  <li>
                                         <a href="#" class="about-info">
                                             <i class="demo-psi-home"></i>
                                             <span class="menu-title">Chennai,TN</span>
-                                            <!-- <i class="arrow"></i> -->
-                                        </a>
+                                             <i class="arrow"></i> -->
+                                       <!--  </a>  -->
                         
                                         <!--Submenu-->
                                         <!-- <ul class="collapse">
@@ -1021,7 +1033,7 @@ defined('BASEPATH') OR exit('No direct path allowed');
                                             <li><a href="dashboard-3.html">Dashboard 3</a></li>
                                             
                                         </ul> -->
-                                    </li>
+                             <!--        </li> -->
                         
                                     <!--Menu list item-->
                                     <!-- <li>
