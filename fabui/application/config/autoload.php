@@ -58,7 +58,7 @@ $autoload['packages'] = array();
 |
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
-$autoload['libraries'] = array('session','PHPtoJS');
+$autoload['libraries'] = array('session');
 
 /*
 | -------------------------------------------------------------------
@@ -127,6 +127,3 @@ $autoload['language'] = array();
 |	$autoload['model'] = array('first_model' => 'first');
 */
 $autoload['model'] = array();
-
-
-

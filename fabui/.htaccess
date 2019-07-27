@@ -1,5 +1,5 @@
 RewriteEngine on
-RewriteBase /fablab/fabui
+RewriteBase /fabui/
 RewriteCond $1 !^(index.php|resources|robots.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

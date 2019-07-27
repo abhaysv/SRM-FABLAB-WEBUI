@@ -14,7 +14,7 @@
 		        <div class="panel-body">
 		            <div class="mar-ver pad-btm">
 		                <h1 class="h3">Signup for FABLAB Access</h1>
-                    <p>Come join FABLAB a nd clain your free credits! Let's set up your account.</p>
+                    <p>Come join FABLAB and claim your free credits! Let's set up your account.</p>
                     <?php 
                     $fattr = array('class' => 'form-signin');
                     echo form_open('/main/register', $fattr); ?>

@@ -1,28 +1,55 @@
 <?php
 
-error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
-ini_set("include_path", '/home2/siicserv/php:' . ini_get("include_path") );
+require '/home2/srmiicco/fablab.srmiic.com/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
 
-require_once "Mail.php";
+        $mail = new PHPMailer;
+        $mail->isSMTP();
+        $mail->Host = '136.143.191.189';
+        
+        $mail->SMTPAuth = true;
+        $mail->Username = 'no-reply@srmiic.com';
+        $mail->Password = 'Killmedude@123';
+       $mail->SMTPSecure = "tls";
+        $mail->Port = 587;
+        $mail->SMTPDebug = 4;
+        $mail->SMTPAutoTLS = false;
+        $mail->SMTPOptions = array(
+                    'ssl' => array(
+                        'verify_peer' => false,
+                        'verify_peer_name' => false,
+                        'allow_self_signed' => true
+                    )
+                );
+        $message = '';
+        $message .= '<strong>Hi</strong> ' . $userInfo->Student_Name;                     
+        $message .= '<strong>You have signed up with our website</strong><br>';
+        $message .= '<strong>Please click:</strong> ' . $link;
+        
+    
+        
+        //$this->load->view('emails/verification.php',$data,TRUE);
 
-$host = "tsl://smtp.zoho.com";
-$username = "no-reply@srmiic.com";
-$password = "Killmedude@123";
-$port = "587";
-$to = "monuabhaysv@gmail.com";
-$email_from = "no-reply@srmiic.com";
-$email_subject = "Test email" ;
-$email_body = "email is for test" ;
-$email_address = "systems@srmiic.com";
 
-$headers = array ('From' => $email_from, 'To' => $to, 'Subject' => $email_subject, 'Reply-To' => $email_address);
-$smtp = Mail::factory('smtp', array ('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
-$mail = $smtp->send($to, $headers, $email_body);
+        $mail->From = 'no-reply@srmiic.com';
+        $mail->FromName = 'SRM FABLAB';
+        $mail->addAddress('monuabhaysv@gmail.com');
 
+        $mail->isHTML(true);
 
-if (PEAR::isError($mail)) {
-echo("<p>" . $mail->getMessage() . "</p>");
-} else {
-echo("<p>Message successfully sent!</p>");
+        $mail->Subject = 'FABLAB REGISTARTION VERIFICATION!';
+        $mail->Body    = 'test body daa';
+        
+        
+        if(!$mail->Send())
+{
+   echo "Message could not be sent. 
+";
+   echo "Mailer Error: " . $mail->ErrorInfo;
+   exit;
 }
+
+echo "Message has been sent";
+
+
+
 ?>
