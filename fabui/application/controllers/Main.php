@@ -32,13 +32,12 @@ class Main extends CI_Controller {
 	{   
             if(empty($this->session->userdata['email'])){
                 redirect(site_url().'main/login/');
-            }
-            //$this->load->library('PHPtoJS',['namespace' => 'arjun']);            
+            }            
             /*front page*/
-            //$data = $this->session->userdata;
-            
+            $data = $this->session->userdata;
+             
             $this->load->view('header');            
-            $this->load->view('userprofile');
+            $this->load->view('userprofile', $data);
             $this->load->view('footer');
 	}
     function accept_terms() {
@@ -85,7 +84,7 @@ class Main extends CI_Controller {
                     $qstring = $this->base64url_encode($token);                    
                     $url = site_url() . 'main/complete/token/' . $qstring;
                     // Enable this when want to avoid mail stuff
-                    echo $url;
+                    //echo $url;
                     $email_sent = $this->user_model->send_email_verify($userInfo,$url);
 
                     if($email_sent){ // if the email is sent the smtp returns true
@@ -187,7 +186,7 @@ class Main extends CI_Controller {
                 foreach($userInfo as $key=>$val){
                     $this->session->set_userdata($key, $val);
                 }
-                redirect(site_url().'main/');
+                redirect(site_url().'assets/complete.html');
             }
             
         }
@@ -227,13 +226,12 @@ class Main extends CI_Controller {
                 $token = $this->user_model->insertToken($userInfo->id);                        
                 $qstring = $this->base64url_encode($token);                  
                 $url = site_url() . 'main/reset_password/token/' . $qstring;
-                $link = '<a href="' . $url . '">' . $url . '</a>'; 
-                
-                $message = '';                     
-                $message .= '<strong>A password reset has been requested for this email account</strong><br>';
-                $message .= '<strong>Please click:</strong> ' . $link;             
+                $email_sent = $this->user_model->send_email_verify($userInfo,$url);
 
-                echo $message; //send this through mail
+                if($email_sent){ // if the email is sent the smtp returns true
+                        $this->session->set_flashdata('flash_message', 'An verification email has been sent to your email, In case you havent recieved it pls check SPAM');
+                        redirect(site_url().'main/login');
+                }
                 exit;
                 
             }

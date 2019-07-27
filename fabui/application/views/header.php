@@ -46,12 +46,6 @@ defined('BASEPATH') OR exit('No direct path allowed')
     <link href="<?php echo base_url()."assets/";?>plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
 
 
-    <!--Font Awesome [ OPTIONAL ]-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
-
-    <!-- CUSTOM CSS -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url()."assets/";?>css/userprofile.css">
 
 
 
@@ -74,15 +68,6 @@ defined('BASEPATH') OR exit('No direct path allowed')
 
     <!--NiftyJS [ RECOMMENDED ]-->
     <script src="<?php echo base_url()."assets/";?>js/nifty.min.js"></script>
-
-
-    <!--Morris.js [ OPTIONAL ]-->
-<!--     <script src="<?php echo base_url()."assets/";?>plugins/morris-js/morris.min.js"></script>
-    <script src="<?php echo base_url()."assets/";?>plugins/morris-js/raphael-js/raphael.min.js"></script>
- -->
-
-    
-
 
 
 

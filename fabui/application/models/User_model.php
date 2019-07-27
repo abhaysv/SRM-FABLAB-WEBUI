@@ -177,13 +177,14 @@ class User_model extends CI_Model {
     public function send_email_verify($userInfo,$url)
     {
      //  require '/fablab/fabui/assets/PHPMailer-master/PHPMailerAutoload.php';
-       require '/home2/siicserv/fablab.siic.co.in/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
+    
+       require '/home2/srmiicco/fablab.srmiic.com/fabui/application/third_party/PHPMailer-master/PHPMailerAutoload.php';
         $mail = new PHPMailer;
         //$mail->isSMTP();
         $mail->Host = 'smtp.zoho.com';
         $mail->SMTPAuth = true;
         $mail->Username = 'no-reply@srmiic.com';
-        $mail->Password = 'passww';
+        $mail->Password = 'Killmedude@123';
         $mail->SMTPSecure = 'ssl';
         $mail->Port = 465;
 

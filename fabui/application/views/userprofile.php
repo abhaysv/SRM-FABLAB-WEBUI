@@ -1,8 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct path allowed');
-// $myJSON = json_encode($this->session->userdata());
-
-// echo $myJSON;
+defined('BASEPATH') OR exit('No direct path allowed')
 ?>
     <div id="container" class="effect aside-float aside-bright mainnav-lg page-fixedbar page-fixedbar-right">
         
@@ -197,25 +194,25 @@ defined('BASEPATH') OR exit('No direct path allowed');
 
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                            <li class="dropdown-header"><i class="demo-pli-file icon-lg icon-fw"></i> Pages</li>
-                                            <li><a href="#">Profile</a></li>
-                                            <li><a href="#">Search Result</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Sreen Lock</a></li>
-                                            <li><a href="#">Maintenance</a></li>
-                                            <li><a href="#">Invoice</a></li>
-                                            <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
+									        <li class="dropdown-header"><i class="demo-pli-file icon-lg icon-fw"></i> Pages</li>
+									        <li><a href="#">Profile</a></li>
+									        <li><a href="#">Search Result</a></li>
+									        <li><a href="#">FAQ</a></li>
+									        <li><a href="#">Sreen Lock</a></li>
+									        <li><a href="#">Maintenance</a></li>
+									        <li><a href="#">Invoice</a></li>
+									        <li><a href="#" class="disabled">Disabled</a></li>                                        </ul>
 
                                     </div>
                                     <div class="col-sm-4 col-md-3">
 
                                         <!--Mega menu list-->
                                         <ul class="list-unstyled">
-                                            <li class="dropdown-header"><i class="demo-pli-mail icon-lg icon-fw"></i> Mailbox</li>
-                                            <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
-                                            <li><a href="#">Read Message</a></li>
-                                            <li><a href="#">Compose</a></li>
-                                            <li><a href="#">Template</a></li>
+									        <li class="dropdown-header"><i class="demo-pli-mail icon-lg icon-fw"></i> Mailbox</li>
+									        <li><a href="#"><span class="pull-right label label-danger">Hot</span>Indox</a></li>
+									        <li><a href="#">Read Message</a></li>
+									        <li><a href="#">Compose</a></li>
+									        <li><a href="#">Template</a></li>
                                         </ul>
                                         <p class="pad-top text-main text-sm text-uppercase text-bold"><i class="icon-lg demo-pli-calendar-4 icon-fw"></i>News</p>
                                         <p class="pad-top mar-top bord-top text-sm">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
@@ -314,46 +311,46 @@ defined('BASEPATH') OR exit('No direct path allowed');
 
                             <!--Language selector menu-->
                             <ul class="head-list dropdown-menu">
-                                <li>
-                                    <!--English-->
-                                    <a href="#" class="active">
-                                        <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/united-kingdom.png" alt="English">
-                                        <span class="lang-id">EN</span>
-                                        <span class="lang-name">English</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--France-->
-                                    <a href="#">
-                                        <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/france.png" alt="France">
-                                        <span class="lang-id">FR</span>
-                                        <span class="lang-name">Fran&ccedil;ais</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Germany-->
-                                    <a href="#">
-                                        <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/germany.png" alt="Germany">
-                                        <span class="lang-id">DE</span>
-                                        <span class="lang-name">Deutsch</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Italy-->
-                                    <a href="#">
-                                        <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/italy.png" alt="Italy">
-                                        <span class="lang-id">IT</span>
-                                        <span class="lang-name">Italiano</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <!--Spain-->
-                                    <a href="#">
-                                        <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/spain.png" alt="Spain">
-                                        <span class="lang-id">ES</span>
-                                        <span class="lang-name">Espa&ntilde;ol</span>
-                                    </a>
-                                </li>
+						        <li>
+						            <!--English-->
+						            <a href="#" class="active">
+						                <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/united-kingdom.png" alt="English">
+						                <span class="lang-id">EN</span>
+						                <span class="lang-name">English</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--France-->
+						            <a href="#">
+						                <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/france.png" alt="France">
+						                <span class="lang-id">FR</span>
+						                <span class="lang-name">Fran&ccedil;ais</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Germany-->
+						            <a href="#">
+						                <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/germany.png" alt="Germany">
+						                <span class="lang-id">DE</span>
+						                <span class="lang-name">Deutsch</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Italy-->
+						            <a href="#">
+						                <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/italy.png" alt="Italy">
+						                <span class="lang-id">IT</span>
+						                <span class="lang-name">Italiano</span>
+						            </a>
+						        </li>
+						        <li>
+						            <!--Spain-->
+						            <a href="#">
+						                <img class="lang-flag" src="<?php echo base_url()."assets/";?>img/flags/spain.png" alt="Spain">
+						                <span class="lang-id">ES</span>
+						                <span class="lang-name">Espa&ntilde;ol</span>
+						            </a>
+						        </li>
                             </ul>
                         </li>
                         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -440,140 +437,358 @@ defined('BASEPATH') OR exit('No direct path allowed');
                     
                 </div>
 
+                                
+                <!--Fixedbar-->
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <div class="page-fixedbar-container">
+                    <div class="page-fixedbar-content">
+                        <div class="nano">
+                            <div class="nano-content">
+                                <p class="pad-all text-main text-sm text-uppercase text-bold">
+                                    Who to Follow
+                                </p>
 
+                                <!--Family-->
+                                <div class="list-group bg-trans bord-btm">
+                                    <div class="list-group-item list-item-sm">
+                                        <div class="media-left pos-rel">
+                                            <a href="#"><img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/2.png" alt="Profile Picture"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#" class="text-main">
+                                                <p>Stephen Tran</p>
+                                            </a>
+                                            <button class="btn btn-xs btn-default"><i class="demo-pli-add-user"></i> Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="media-left pos-rel">
+                                            <a href="#"><img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/8.png" alt="Profile Picture"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#" class="text-main">
+                                                <p>Brittany Meyer</p>
+                                            </a>
+                                            <button class="btn btn-xs btn-default"><i class="demo-pli-add-user"></i> Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="media-left pos-rel">
+                                            <a href="#"><img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/4.png" alt="Profile Picture"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#" class="text-main">
+                                                <p>Donald Brown</p>
+                                            </a>
+                                            <button class="btn btn-xs btn-default"><i class="demo-pli-add-user"></i> Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="media-left pos-rel">
+                                            <a href="#"><img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/9.png" alt="Profile Picture"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#" class="text-main">
+                                                <p>Betty Murphy</p>
+                                            </a>
+                                            <button class="btn btn-xs btn-default"><i class="demo-pli-add-user"></i> Follow</button>
+                                        </div>
+                                    </div>
+                                    <div class="list-group-item">
+                                        <div class="media-left pos-rel">
+                                            <a href="#"><img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/7.png" alt="Profile Picture"></a>
+                                        </div>
+                                        <div class="media-body">
+                                            <a href="#" class="text-main">
+                                                <p>Samantha Reid</p>
+                                            </a>
+                                            <button class="btn btn-xs btn-default"><i class="demo-pli-add-user"></i> Follow</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Monthly billing-->
+                                <div class="pad-all">
+                                    <p class="text-main text-sm text-uppercase text-bold">Billing &amp; reports</p>
+                                    <p>Get <strong class="text-main">$5.00</strong> off your next bill by making sure your full payment reaches us before August 5, 2018.</p>
+                                </div>
+                                <hr class="new-section-xs">
+                                <div class="pad-all">
+                                    <span class="text-bold text-main">Amount Due On</span>
+                                    <p class="text-sm">August 17, 2018</p>
+                                    <p class="text-2x text-thin text-main">$83.09</p>
+                                    <button class="btn btn-block btn-success mar-top">Pay Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+                <!--End Fixedbar-->
 
                 <!--Page content-->
                 <!--===================================================-->
                 <div id="page-content">
                         <div class="panel">
-                            <div class="panel-body">
-                                <div class="fixed-fluid">
-                                     <div class="fluid">
-                                        <div class="text-right">
-                                            <button class="btn btn-sm btn-primary">Edit Profile</button>
-                                        </div>
-                    
-                                    </div>
-                                    <div class="fixed-md-200 pull-sm-left fixed-right-border">
-                    
-                                        <!-- Simple profile -->
-                                        <div class="text-center" style="padding: 6%;">
-                                            <div class="pad-ver">
-                                                <img src="<?php echo base_url()."assets/";?>img/profile-photos/1.png" class="img-lg img-circle" alt="Profile Picture">
-                                            </div>
-                                            <h4 class="text-lg text-overflow mar-no"><?php echo $this->session->userdata('Student_Name'); ?></h4>
-                                            <p class="text-sm text-sm-2 text-muted"><?php echo $this->session->userdata('Registration_Number'); ?> | Batch <?php echo $this->session->userdata('Batch'); ?></p>
-                                            <p class="text-sm text-sm-2 text-muted"><?php echo ucwords($this->session->userdata('role')); ?></p>
-                    
-                                          
-                                        </div>
-                                        <hr>
-                                                                            <!-- Profile Details -->
-                                        <p class="pad-ver text-main text-sm text-uppercase text-bold">About</p>
-                                        <p class="text-sm ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-
-                                        <p class="pad-ver text-main text-sm text-uppercase text-bold">Address</p>
-                                        <p class="text-sm "><?php echo $this->session->userdata('Communication_Address'); ?></p>
-
-                                     
-                                    </div>
-
-
-                                    <div class="fixed-md-200 pull-sm-left fixed-right-border">
-                    
-                                        <!-- Simple profile -->
-                                       <!-- Donut Chart -->
-                                <!---------------------------------->
-                                <div class="panel">
-                                    <div class="panel-heading">
-                                        <h1 class="panel-title">Credits: </h1>
-                                    </div>
-                                    <div class="panel-body">
-                                        <div id="demo-morris-donut" class="morris-donut" style="height: 250px"></div>
-                                    </div>
-                                </div>
-                                        <hr>
-                    
-                                        <p class="pad-ver text-main text-sm text-uppercase text-bold">Skills</p>
-                                        <ul class="list-inline">
-                                            <li class="tag tag-sm">PHP Programming</li>
-                                            <li class="tag tag-sm">Marketing</li>
-                                            <li class="tag tag-sm">Graphic Design</li>
-                                            <li class="tag tag-sm">Sketch</li>
-                                            <li class="tag tag-sm">Photography</li>
-                                            <li class="tag tag-sm">PHP Programming</li>
-                                            <li class="tag tag-sm">Marketing</li>
-                                            <li class="tag tag-sm">Graphic Design</li>
-                                            <li class="tag tag-sm">Sketch</li>
-                                            <li class="tag tag-sm">Photography</li>
-                                        </ul>
-                    
-                    
-                                        
-                    
-                                     
-                                    </div>
-
-                                   
-
-
-                                    <div class="fixed-md-250 pull-sm-left">
-                                    
-                                        <!-- Simple profile -->
-                                        <div class="text-center" style="padding: 7%;">
-                                            <h4 class="text-lg text-lg-3 text-overflow mar-no">Department</h4>
-                                            <p class="text-sm text-sm-2 text-muted"><?php echo $this->session->userdata('Department'); ?></p>
-                                            <br>
-                                            <h4 class="text-lg text-lg-2 text-overflow mar-no">Academic Advisor</h4>
-                                            <p class="text-sm text-sm-2 text-muted"><?php echo $this->session->userdata('Academic_Advsior');?></p>
-                                            <br>
-                                            <h4 class="text-lg text-lg-2 text-overflow mar-no">Faculty Advisor</h4>
-                                            <p class="text-sm text-sm-2 text-muted"><?php echo $this->session->userdata('Faculty_Advisor');?></p>
-                                           
-                                        </div>
-                                        <hr>
-                    
-                                        <!-- Profile Details -->
-                                        <div class="row" style="text-align: center;">
-                                            <div class="col-xs-6">
-                                                <p class="pad-ver text-main text-sm text-uppercase text-bold">Subject</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                                                <p>A Subject1</p>
-                             
-                                        
-                                            </div>
-
-                                            <div class="col-xs-6">
-                                                <p class="pad-ver text-main text-sm text-uppercase text-bold">Attendance</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                                                <p>90%</p>
-                             
-                                        
-                                            </div>
-                                        </div>
-                                        
-                    
-                    
-                                        
-                    
-                                     
-                                    </div>
-
-                                    
-                                </div>
-                            </div>
-                        </div>
-                        
+					        <div class="panel-body">
+					            <div class="fixed-fluid">
+					                <div class="fixed-md-200 pull-sm-left fixed-right-border">
+					
+					                    <!-- Simple profile -->
+					                    <div class="text-center">
+					                        <div class="pad-ver">
+					                            <img src="<?php echo base_url()."assets/";?>img/profile-photos/1.png" class="img-lg img-circle" alt="Profile Picture">
+					                        </div>
+					                        <h4 class="text-lg text-overflow mar-no"><?php echo $this->session->userdata('Student_Name'); ?></h4>
+					                        <p class="text-sm text-muted"><?php echo $this->session->userdata('Department'); ?></p>
+					
+					                        <div class="pad-ver btn-groups">
+					                            <a href="#" class="btn btn-icon demo-pli-facebook icon-lg add-tooltip" data-original-title="Facebook" data-container="body"></a>
+					                            <a href="#" class="btn btn-icon demo-pli-twitter icon-lg add-tooltip" data-original-title="Twitter" data-container="body"></a>
+					                            <a href="#" class="btn btn-icon demo-pli-google-plus icon-lg add-tooltip" data-original-title="Google+" data-container="body"></a>
+					                            <a href="#" class="btn btn-icon demo-pli-instagram icon-lg add-tooltip" data-original-title="Instagram" data-container="body"></a>
+					                        </div>
+					                        <button class="btn btn-block btn-success btn-lg">Follow</button>
+					                    </div>
+					                    <hr>
+					
+					                    <!-- Profile Details -->
+					                    <p class="pad-ver text-main text-sm text-uppercase text-bold">About Me</p>
+					                    <p><i class="demo-pli-map-marker-2 icon-lg icon-fw"></i> <?php echo $this->session->userdata('Communication_Address'); ?></p>
+					                    <p><a href="#" class="btn-link"><i class="demo-pli-internet icon-lg icon-fw"></i> <?php echo $this->session->userdata('Registration_Number'); ?></a></p>
+					                    <p><i class="demo-pli-old-telephone icon-lg icon-fw"></i><?php echo $this->session->userdata('Mobile_Number'); ?></p>
+					                    <p class="text-sm text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+					
+					
+					                    <hr>
+					                    <p class="pad-ver text-main text-sm text-uppercase text-bold">Skills</p>
+					                    <ul class="list-inline">
+					                        <li class="tag tag-sm">PHP Programming</li>
+					                        <li class="tag tag-sm">Marketing</li>
+					                        <li class="tag tag-sm">Graphic Design</li>
+					                        <li class="tag tag-sm">Sketch</li>
+					                        <li class="tag tag-sm">Photography</li>
+					                    </ul>
+					
+					                    <hr>
+					                    <p class="pad-ver text-main text-sm text-uppercase text-bold">Gallery</p>
+					                    <div class="row img-gallery">
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-3.jpg" alt="thumbs">
+					                        </div>
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-6.jpg" alt="thumbs">
+					                        </div>
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-4.jpg" alt="thumbs">
+					                        </div>
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-2.jpg" alt="thumbs">
+					                        </div>
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-5.jpg" alt="thumbs">
+					                        </div>
+					                        <div class="col-xs-6">
+					                            <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/thumbs/img-1.jpg" alt="thumbs">
+					                        </div>
+					                    </div>
+					                </div>
+					                <div class="fluid">
+					                    <div class="text-right">
+					                        <button class="btn btn-sm btn-primary">Edit Profile</button>
+					                        <button class="btn btn-sm btn-primary">Send Message</button>
+					                        <button class="btn btn-sm btn-success">Download CV</button>
+					                    </div>
+					
+					                    <hr class="new-section-md bord-no">
+					
+					                    <div class="pad-btm">
+					                        <textarea class="form-control" rows="4" placeholder="What are you thinking?"></textarea>
+					                        <div class="mar-top clearfix">
+					                            <button class="btn btn-sm btn-primary pull-right" type="submit"><i class="demo-psi-right-4 icon-fw"></i> Share</button>
+					                            <a class="btn btn-icon demo-pli-video icon-lg add-tooltip" href="#" data-original-title="Add Video" data-toggle="tooltip"></a>
+					                            <a class="btn btn-icon demo-pli-camera-2 icon-lg add-tooltip" href="#" data-original-title="Add Photo" data-toggle="tooltip"></a>
+					                            <a class="btn btn-icon demo-pli-file icon-lg add-tooltip" href="#" data-original-title="Add File" data-toggle="tooltip"></a>
+					                        </div>
+					                    </div>
+					
+					                    <hr>
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/2.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <a href="#" class="media-heading box-inline text-main text-semibold">John Doe</a> Share a status of <a href="#" class="media-heading box-inline text-main text-semibold">Lucy Doe</a>
+					                                <p class="text-muted text-sm"><i class="demo-pli-smartphone-3 icon-lg"></i> - From Mobile - 26 min ago</p>
+					                            </div>
+					                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt </p>
+					                            <a class="btn btn-sm btn-default"><i class="icon-lg demo-pli-like"></i> Like </a>
+					                            <a class="btn btn-sm btn-default"><i class="icon-lg demo-pli-heart-2"></i> Love</a>
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/3.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <a href="#" class="media-heading box-inline text-main text-semibold">Stephen Tran</a> started following <a href="#" class="media-heading box-inline text-main text-semibold">Kathryn Obrien</a>
+					                                <p class="text-muted text-sm"><i class="demo-pli-laptop icon-lg"></i> - From Notebook - 34 min ago</p>
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/6.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <a href="#" class="media-heading box-inline text-main text-semibold">Karen Murray</a> posted message on <a href="#" class="media-heading box-inline text-main text-semibold">Howard Rios</a> site.
+					                                <p class="text-muted text-sm"><i class="demo-pli-monitor-2 icon-lg"></i> - From Desktop - 55 min ago</p>
+					                            </div>
+					                            <blockquote class="text-muted text-sm">
+					                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					                            </blockquote>
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/10.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <div><a href="#" class="media-heading box-inline text-main text-semibold">Lisa D</a> added new photo to <span class="text-semibold text-main">General photos</span></div>
+					                                <p class="text-muted text-sm"><i class="demo-pli-smartphone-3 icon-lg"></i> Mobile - 11 min ago</p>
+					                            </div>
+					                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+					
+					                            <div class="comment-content comment-photos row">
+					                                <div class="col-sm-6">
+					                                    <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/shared-img-3.jpg" alt="Image">
+					                                </div>
+					                                <div class="col-sm-6">
+					                                    <img class="img-responsive" src="<?php echo base_url()."assets/";?>img/shared-img-2.jpg" alt="Image">
+					                                </div>
+					                            </div>
+					
+					                            <ul class="comment-content list-inline">
+					                                <li><a href="#"><i class="demo-pli-heart-2 icon-lg "></i>87</a></li>
+					                                <li><a href="#"><i class="demo-pli-speech-bubble-4 icon-lg "></i>107</a></li>
+					                                <li><a href="#"><i class="demo-pli-right-4 icon-lg"></i>95</a></li>
+					                            </ul>
+					
+					                            <!-- Comments -->
+					                            <div class="comment-body">
+					                                <div class="comment-content media">
+					                                    <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/5.png"></a>
+					                                    <div class="media-body">
+					                                        <div class="comment-header">
+					                                            <a href="#" class="text-main text-semibold">Bobby Marz</a>
+					                                            <small class="text-muted">7 min ago</small>
+					                                        </div>
+					                                        Sed diam nonummy nibh euismod.
+					                                    </div>
+					                                </div>
+					
+					                                <div class="comment-content media">
+					                                    <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/7.png"></a>
+					                                    <div class="media-body">
+					                                        <div class="comment-header">
+					                                            <a href="#" class="text-main text-semibold">Lucy Moon</a>
+					                                            <small class="text-muted">2 Hours ago</small>
+					                                        </div>
+					                                        Duis autem vel eum iriure dolor in vulputate ?
+					                                    </div>
+					                                </div>
+					
+					                                <div class="comment-content media">
+					                                    <a class="media-left" href="#"><img class="img-circle img-xs" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/4.png"></a>
+					                                    <div class="media-body">
+					                                        <div class="comment-header">
+					                                            <a href="#" class="text-main text-semibold">Jacky Lore</a>
+					                                            <small class="text-muted">1 Days ago</small>
+					                                        </div>
+					                                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+					                                    </div>
+					                                </div>
+					                                <button class="btn btn-default btn-block mar-ver"><span class="text-semibold">36</span> Load More</button>
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/5.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <a href="#" class="media-heading box-inline text-main text-semibold">Donald Brown</a> commented on your post.
+					                                <p class="text-muted text-sm"><i class="demo-pli-laptop icon-lg"></i> - From Notebook - 34 min ago</p>
+					                            </div>
+					                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt </p>
+					                            <!--<form class="publisher bt-1 border-fade bg-white">
+					                                <img class="avatar avatar-sm" src="<?php echo base_url()."assets/";?>img/profile-photos/6.png">
+					                                <input class="publisher-input" type="text" placeholder="Add Your Comment">
+					                                <a class="publisher-btn" href="#"><i class="fa fa-smile-o"></i></a>
+					                                <span class="publisher-btn file-group">
+					                                    <i class="demo-pli-camera-2"></i>
+					                                    <input type="file">
+					                                </span>
+					                            </form>-->
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					                    <!-- Newsfeed Content -->
+					                    <!--===================================================-->
+					                    <div class="comments media-block">
+					                        <a class="media-left" href="#"><img class="img-circle img-sm" alt="Profile Picture" src="<?php echo base_url()."assets/";?>img/profile-photos/8.png"></a>
+					                        <div class="media-body">
+					                            <div class="comment-header">
+					                                <a href="#" class="media-heading box-inline text-main text-semibold">Kathryn Obrien</a> Share a status of <a href="#" class="media-heading box-inline text-main text-semibold">Lucy Doe</a>
+					                                <p class="text-muted text-sm"><i class="demo-pli-smartphone-3 icon-lg"></i> - From Mobile - 26 min ago</p>
+					                            </div>
+					                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt </p>
+					                            <div class="text-right">
+					                                <a class="btn btn-sm btn-default"><i class="icon-lg demo-pli-like"></i> Like </a>
+					                                <a class="btn btn-sm btn-default"><i class="icon-lg demo-pli-heart-2"></i> Love</a>
+					                                <a class="btn btn-sm btn-purple"><i class="icon-lg demo-pli-speech-bubble-5"></i> Message</a>
+					                            </div>
+					                        </div>
+					                    </div>
+					                    <!--===================================================-->
+					                    <!-- End Newsfeed Content -->
+					
+					
+					                    <button class="btn btn-primary btn-block mar-ver">Load More</button>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    
                 </div>
                 <!--===================================================-->
                 <!--End page content-->
@@ -583,8 +798,7 @@ defined('BASEPATH') OR exit('No direct path allowed');
             <!--END CONTENT CONTAINER-->
 
 
-                                
-        
+            
             <!--ASIDE-->
             <!--===================================================-->
             <aside id="aside-container">
@@ -629,64 +843,64 @@ defined('BASEPATH') OR exit('No direct path allowed');
 
                                     <!--Family-->
                                     <div class="list-group bg-trans">
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/2.png" alt="Profile Picture">
-                                                <i class="badge badge-success badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Stephen Tran</p>
-                                                <small class="text-muteds">Availabe</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/7.png" alt="Profile Picture">
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Brittany Meyer</p>
-                                                <small class="text-muteds">I think so</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/1.png" alt="Profile Picture">
-                                                <i class="badge badge-info badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Jack George</p>
-                                                <small class="text-muteds">Last Seen 2 hours ago</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/4.png" alt="Profile Picture">
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Donald Brown</p>
-                                                <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/8.png" alt="Profile Picture">
-                                                <i class="badge badge-warning badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Betty Murphy</p>
-                                                <small class="text-muteds">Idle</small>
-                                            </div>
-                                        </a>
-                                        <a href="#" class="list-group-item">
-                                            <div class="media-left pos-rel">
-                                                <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/9.png" alt="Profile Picture">
-                                                <i class="badge badge-danger badge-stat badge-icon pull-left"></i>
-                                            </div>
-                                            <div class="media-body">
-                                                <p class="mar-no text-main">Samantha Reid</p>
-                                                <small class="text-muteds">Offline</small>
-                                            </div>
-                                        </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/2.png" alt="Profile Picture">
+												<i class="badge badge-success badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Stephen Tran</p>
+							                    <small class="text-muteds">Availabe</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/7.png" alt="Profile Picture">
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Brittany Meyer</p>
+							                    <small class="text-muteds">I think so</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/1.png" alt="Profile Picture">
+												<i class="badge badge-info badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Jack George</p>
+							                    <small class="text-muteds">Last Seen 2 hours ago</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/4.png" alt="Profile Picture">
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Donald Brown</p>
+							                    <small class="text-muteds">Lorem ipsum dolor sit amet.</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/8.png" alt="Profile Picture">
+												<i class="badge badge-warning badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Betty Murphy</p>
+							                    <small class="text-muteds">Idle</small>
+							                </div>
+							            </a>
+							            <a href="#" class="list-group-item">
+							                <div class="media-left pos-rel">
+							                    <img class="img-circle img-xs" src="<?php echo base_url()."assets/";?>img/profile-photos/9.png" alt="Profile Picture">
+												<i class="badge badge-danger badge-stat badge-icon pull-left"></i>
+							                </div>
+							                <div class="media-body">
+							                    <p class="mar-no text-main">Samantha Reid</p>
+							                    <small class="text-muteds">Offline</small>
+							                </div>
+							            </a>
                                     </div>
 
                                     <hr>
@@ -945,138 +1159,399 @@ defined('BASEPATH') OR exit('No direct path allowed');
                                 <!--================================-->
                                 <!--End shortcut buttons-->
 
- <!--Start of about-->
-                                <!--================================-->
-                                
 
                                 <ul id="mainnav-menu" class="list-group">
-                        
-                                    <!--Category name-->
-                                    <!-- <li class="list-header">Navigation</li> -->
-                        
+						
+						            <!--Category name-->
+						            <li class="list-header">Navigation</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-home"></i>
+						                    <span class="menu-title">Dashboard</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="index.html">Dashboard 1</a></li>
+											<li><a href="dashboard-2.html">Dashboard 2</a></li>
+											<li><a href="dashboard-3.html">Dashboard 3</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-split-vertical-2"></i>
+						                    <span class="menu-title">Layouts</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
+											<li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
+											<li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a></li>
+											<li><a href="layouts-offcanvas-revealing-navigation.html">Revealing Navigation</a></li>
+											<li class="list-divider"></li>
+											<li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
+											<li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
+											<li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
+											<li class="list-divider"></li>
+											<li><a href="layouts-fixed-navbar.html">Fixed Navbar</a></li>
+											<li><a href="layouts-fixed-footer.html">Fixed Footer</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="widgets.html">
+						                    <i class="demo-psi-gear-2"></i>
+						                    <span class="menu-title">
+												Widgets
+												<span class="pull-right badge badge-warning">24</span>
+											</span>
+						                </a>
+						            </li>
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">Components</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-boot-2"></i>
+						                    <span class="menu-title">UI Elements</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="ui-buttons.html">Buttons</a></li>
+											<li><a href="ui-panels.html">Panels</a></li>
+											<li><a href="ui-modals.html">Modals</a></li>
+											<li><a href="ui-progress-bars.html">Progress bars</a></li>
+											<li><a href="ui-components.html">Components</a></li>
+											<li><a href="ui-typography.html">Typography</a></li>
+											<li><a href="ui-list-group.html">List Group</a></li>
+											<li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a></li>
+											<li><a href="ui-alerts-tooltips.html">Alerts &amp; Tooltips</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-pen-5"></i>
+						                    <span class="menu-title">Forms</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="forms-general.html">General</a></li>
+											<li><a href="forms-components.html">Advanced Components</a></li>
+											<li><a href="forms-validation.html">Validation</a></li>
+											<li><a href="forms-wizard.html">Wizard</a></li>
+											<li><a href="forms-file-upload.html">File Upload</a></li>
+											<li><a href="forms-text-editor.html">Text Editor</a></li>
+											<li><a href="forms-markdown.html">Markdown</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-receipt-4"></i>
+						                    <span class="menu-title">Tables</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="tables-static.html">Static Tables</a></li>
+											<li><a href="tables-bootstrap.html">Bootstrap Tables</a></li>
+											<li><a href="tables-datatable.html">Data Tables</a></li>
+											<li><a href="tables-footable.html">Foo Tables</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-bar-chart"></i>
+						                    <span class="menu-title">Charts</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="charts-morris-js.html">Morris JS</a></li>
+											<li><a href="charts-flot-charts.html">Flot Charts</a></li>
+											<li><a href="charts-easy-pie-charts.html">Easy Pie Charts</a></li>
+											<li><a href="charts-sparklines.html">Sparklines</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">More</li>
+						
+						            <!--Menu list item-->
+						            <li class="active-sub">
+						                <a href="#">
+						                    <i class="demo-psi-computer-secure"></i>
+						                    <span class="menu-title">App Views</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse in">
+						                    <li><a href="app-file-manager.html">File Manager</a></li>
+											<li><a href="app-users.html">Users</a></li>
+											<li><a href="app-users-2.html">Users 2</a></li>
+											<li class="active-link"><a href="app-profile.html">Profile</a></li>
+											<li><a href="app-calendar.html">Calendar</a></li>
+											<li><a href="app-taskboard.html">Taskboard</a></li>
+											<li><a href="app-contact-us.html">Contact Us</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-repair"></i>
+						                    <span class="menu-title">Miscellaneous</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="misc-timeline.html">Timeline</a></li>
+											<li><a href="misc-maps.html">Google Maps</a></li>
+											<li><a href="xplugins-notifications.html">Notifications<span class="label label-purple pull-right">Improved</span></a></li>
+											<li><a href="misc-nestable-list.html">Nestable List</a></li>
+											<li><a href="misc-animate-css.html">CSS Animations</a></li>
+											<li><a href="misc-css-loaders.html">CSS Loaders</a></li>
+											<li><a href="misc-spinkit.html">Spinkit</a></li>
+											<li><a href="misc-tree-view.html">Tree View</a></li>
+											<li><a href="misc-clipboard.html">Clipboard</a></li>
+											<li><a href="misc-x-editable.html">X-Editable</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-file-html"></i>
+						                    <span class="menu-title">Pages</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="pages-blank.html">Blank Page</a></li>
+											<li><a href="pages-invoice.html">Invoice</a></li>
+											<li><a href="pages-search-results.html">Search Results</a></li>
+											<li><a href="pages-faq.html">FAQ</a></li>
+											<li class="list-divider"></li>
+											<li><a href="pages-404.html">Error 404 </a></li>
+											<li><a href="pages-500.html">Error 500</a></li>
+											<li><a href="pages-maintenance.html">Maintenance</a></li>
+											<li class="list-divider"></li>
+											<li><a href="pages-login.html">Login</a></li>
+											<li><a href="pages-register.html">Register</a></li>
+											<li><a href="pages-password-reminder.html">Password Reminder</a></li>
+											<li><a href="pages-lock-screen.html">Lock Screen</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-warning-window"></i>
+						                    <span class="menu-title">Grid System</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="grid-bootstrap.html">Bootstrap Grid</a></li>
+											<li><a href="grid-liquid-fixed.html">Liquid Fixed</a></li>
+											<li><a href="grid-match-height.html">Match Height</a></li>
+											<li><a href="grid-masonry.html">Masonry</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-mail"></i>
+						                    <span class="menu-title">Email</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="mailbox.html">Inbox</a></li>
+											<li><a href="mailbox-message.html">View Message</a></li>
+											<li><a href="mailbox-compose.html">Compose Message</a></li>
+											<li><a href="mailbox-templates.html">Email Templates</a></li>
+											
+						                </ul>
+						            </li>
+
+
                                     <!--Menu list item-->
                                     <li>
-                                        <a href="#" class="about-info">
-                                            <?php
-                                                if($this->session->userdata('Gender') == 'Male'){
-                                                    echo 
-                                                        '<i class="fas fa-male" style="font-size:18px;"></i>
-                                                        <span class="menu-title">'.$this->session->userdata('Gender').'</span>';
-                                                }
-                                                else if($this->session->userdata('Gender') == 'Female'){
-                                                    echo 
-                                                        '<i class="fas fa-female" style="font-size:18px;"></i>
-                                                        <span class="menu-title">'.$this->session->userdata('Gender').'</span>';
-                                                }
-                                            ?>
-                                            
-                                            
-                                            <!-- <i class="arrow"></i> -->
-                                            &emsp;&nbsp;
-                                            <i class="fas fa-birthday-cake" style="font-size:15px;"></i>
-                                            <span class="menu-title"><?php echo $this->session->userdata('Date_of_Birth'); ?></span>
-                                           <!--   <i c -->
-                                        </a>
-                        
-                                        <!--Submenu
-                                         <ul class="collapse">
-                                            <li><a href="index.html">Dashboard 1</a></li>
-                                            <li><a href="dashboard-2.html">Dashboard 2</a></li>
-                                            <li><a href="dashboard-3.html">Dashboard 3</a></li>
-                                            
-                                        </ul> -->
-                                    </li>
-
-                                      <li>
-                                        <a href="#" class="about-info">
-                                            <i class="fas fa-mobile-alt" style="font-size:15px;"></i>
-                                            <span class="menu-title"><?php echo $this->session->userdata('Mobile_Number'); ?></span>
-                                            <!-- <i class="arrow"></i> -->
-                                        </a>
-                        
-                                        <!--Submenu-->
-                                        <!-- <ul class="collapse">
-                                            <li><a href="index.html">Dashboard 1</a></li>
-                                            <li><a href="dashboard-2.html">Dashboard 2</a></li>
-                                            <li><a href="dashboard-3.html">Dashboard 3</a></li>
-                                            
-                                        </ul> -->
-                                    </li>
-
-                                      <li>
-                                        <a href="#" class="about-info">
-                                            <i class="fas fa-envelope-square" style="font-size:15px;"></i>
-                                            <span class="menu-title"><?php echo $this->session->userdata('email'); ?></span>
-                                            <!-- <i class="arrow"></i> -->
-                                        </a>
-                        
-                                        <!--Submenu-->
-                                        <!-- <ul class="collapse">
-                                            <li><a href="index.html">Dashboard 1</a></li>
-                                            <li><a href="dashboard-2.html">Dashboard 2</a></li>
-                                            <li><a href="dashboard-3.html">Dashboard 3</a></li>
-                                            
-                                        </ul> -->
-                                    </li>
-
-                                     <!--  <li>
-                                        <a href="#" class="about-info">
-                                            <i class="demo-psi-home"></i>
-                                            <span class="menu-title">Chennai,TN</span>
-                                             <i class="arrow"></i> -->
-                                       <!--  </a>  -->
-                        
-                                        <!--Submenu-->
-                                        <!-- <ul class="collapse">
-                                            <li><a href="index.html">Dashboard 1</a></li>
-                                            <li><a href="dashboard-2.html">Dashboard 2</a></li>
-                                            <li><a href="dashboard-3.html">Dashboard 3</a></li>
-                                            
-                                        </ul> -->
-                             <!--        </li> -->
-                        
-                                    <!--Menu list item-->
-                                    <!-- <li>
                                         <a href="#">
-                                            <i class="demo-psi-split-vertical-2"></i>
-                                            <span class="menu-title">Layouts</span>
+                                            <i class="demo-psi-tactic"></i>
+                                            <span class="menu-title">Menu Level</span>
                                             <i class="arrow"></i>
                                         </a>
-                         -->
+
                                         <!--Submenu-->
-                                        <!-- <ul class="collapse">
-                                            <li><a href="layouts-collapsed-navigation.html">Collapsed Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-navigation.html">Off-Canvas Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-slide-in-navigation.html">Slide-in Navigation</a></li>
-                                            <li><a href="layouts-offcanvas-revealing-navigation.html">Revealing Navigation</a></li>
+                                        <ul class="collapse">
+                                            <li><a href="#">Second Level Item</a></li>
+                                            <li><a href="#">Second Level Item</a></li>
+                                            <li><a href="#">Second Level Item</a></li>
                                             <li class="list-divider"></li>
-                                            <li><a href="layouts-aside-right-side.html">Aside on the right side</a></li>
-                                            <li><a href="layouts-aside-left-side.html">Aside on the left side</a></li>
-                                            <li><a href="layouts-aside-dark-theme.html">Dark version of aside</a></li>
-                                            <li class="list-divider"></li>
-                                            <li><a href="layouts-fixed-navbar.html">Fixed Navbar</a></li>
-                                            <li><a href="layouts-fixed-footer.html">Fixed Footer</a></li>
-                                            
+                                            <li>
+                                                <a href="#">Third Level<i class="arrow"></i></a>
+
+                                                <!--Submenu-->
+                                                <ul class="collapse">
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Third Level<i class="arrow"></i></a>
+
+                                                <!--Submenu-->
+                                                <ul class="collapse">
+                                                    <li><a href="page-blank2.html">Third Level Item 3</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li class="list-divider"></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                    <li><a href="#">Third Level Item</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
-                         -->
-                                    <!--Menu list item-->
-                                    <!-- <li>
-                                        <a href="widgets.html">
-                                            <i class="demo-psi-gear-2"></i>
-                                            <span class="menu-title">
-                                                Widgets
-                                                <span class="pull-right badge badge-warning">24</span>
-                                            </span>
+
+						
+						            <li class="list-divider"></li>
+						
+						            <!--Category name-->
+						            <li class="list-header">Extras</li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-happy"></i>
+						                    <span class="menu-title">Icons Pack</span>
+											<i class="arrow"></i>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="icons-ionicons.html">Ion Icons</a></li>
+											<li><a href="icons-themify.html">Themify</a></li>
+											<li><a href="icons-font-awesome.html">Font Awesome</a></li>
+											<li><a href="icons-flagicons.html">Flag Icon CSS<span class="label label-info pull-right">New</span></a></li>
+											<li><a href="icons-weather-icons.html">Weather Icons<span class="label label-info pull-right">New</span></a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="#">
+						                    <i class="demo-psi-medal-2"></i>
+						                    <span class="menu-title">
+												PREMIUM ICONS
+												<span class="label label-danger pull-right">BEST</span>
+											</span>
+						                </a>
+						
+						                <!--Submenu-->
+						                <ul class="collapse">
+						                    <li><a href="premium-line-icons.html">Line Icons Pack</a></li>
+											<li><a href="premium-solid-icons.html">Solid Icons Pack</a></li>
+											
+						                </ul>
+						            </li>
+						
+						            <!--Menu list item-->
+						            <li>
+						                <a href="helper-classes.html">
+						                    <i class="demo-psi-inbox-full"></i>
+						                    <span class="menu-title">Helper Classes</span>
+						                </a>
+						            </li>                                </ul>
+
+
+                                <!--Widget-->
+                                <!--================================-->
+                                <div class="mainnav-widget">
+
+                                    <!-- Show the button on collapsed navigation -->
+                                    <div class="show-small">
+                                        <a href="#" data-toggle="menu-widget" data-target="#demo-wg-server">
+                                            <i class="demo-pli-monitor-2"></i>
                                         </a>
-                                    </li> -->
-                        
-                                    <li class="list-divider"></li>
-                         
-                                    <!--Category name-->
-                                   <!-- 
+                                    </div>
+
+                                    <!-- Hide the content on collapsed navigation -->
+                                    <div id="demo-wg-server" class="hide-small mainnav-widget-content">
+                                        <ul class="list-group">
+                                            <li class="list-header pad-no pad-ver">Server Status</li>
+                                            <li class="mar-btm">
+                                                <span class="label label-primary pull-right">15%</span>
+                                                <p>CPU Usage</p>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar progress-bar-primary" style="width: 15%;">
+                                                        <span class="sr-only">15%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mar-btm">
+                                                <span class="label label-purple pull-right">75%</span>
+                                                <p>Bandwidth</p>
+                                                <div class="progress progress-sm">
+                                                    <div class="progress-bar progress-bar-purple" style="width: 75%;">
+                                                        <span class="sr-only">75%</span>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="pad-ver"><a href="#" class="btn btn-success btn-bock">View Details</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--================================-->
+                                <!--End widget-->
+
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                     <!--================================-->
                     <!--End menu-->
@@ -1087,35 +1562,3 @@ defined('BASEPATH') OR exit('No direct path allowed');
             <!--END MAIN NAVIGATION-->
 
         </div>
-
-      <script type="text/javascript">
-    
-    $(document).on('nifty.ready', function () {
-
-
-
-    // MORRIS DONUT CHART
-    // =================================================================
-    // Require MorrisJS Chart
-    // -----------------------------------------------------------------
-    // http://morrisjs.github.io/morris.js/
-    // =================================================================
-    var morrisDonut = Morris.Donut({
-        element: 'demo-morris-donut',
-        data: [
-            {label: 'Total Credits', value: 50},
-            {label: 'Used Credits', value: 20}
-        ],
-        colors: [
-            '#ec407a',
-            '#03a9f4',
-            '#d8dfe2'
-        ],
-        resize:true
-    });
-
-    morrisDonut.select(1);
-});
-
-
-</script>
