@@ -8,91 +8,56 @@ defined('BASEPATH') OR exit('No direct path allowed')
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-       
-
-           <!--Open Sans Font [ OPTIONAL ]-->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
-
-
-    <!--Bootstrap Stylesheet [ REQUIRED ]-->
-    <link href="<?php echo base_url()."assets/";?>css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!--Nifty Stylesheet [ REQUIRED ]-->
-    <link href="<?php echo base_url()."assets/";?>css/nifty.min.css" rel="stylesheet">
-
-
-    <!--Nifty Premium Icon [ DEMONSTRATION ]-->
-    <link href="<?php echo base_url()."assets/";?>css/demo/nifty-demo-icons.min.css" rel="stylesheet">
-
-
-    <!--Demo [ DEMONSTRATION ]-->
-    <link href="<?php echo base_url()."assets/";?>css/demo/nifty-demo.min.css" rel="stylesheet">
-
-
-        
-    <!--Morris.js [ OPTIONAL ]-->
-    <link href="<?php echo base_url()."assets/";?>plugins/morris-js/morris.min.css" rel="stylesheet">
-
-
-    <!--Magic Checkbox [ OPTIONAL ]-->
-    <link href="<?php echo base_url()."assets/";?>plugins/magic-check/css/magic-check.min.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
     
 
 
+    <meta name="theme-color" content="#ffffff">
+    
 
+    <meta name="csrf-token" content="M3Onzn5URwhsILuaHc9wEgVUl6vaQCwhoBiP90T1">
 
+    <!-- Bootstrap Core CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/bootstrap/dist/css/bootstrap.min.css">
 
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/bower_components/bootstrap-extension/css/bootstrap-extension.css">
 
-    <!--JAVASCRIPT-->
-    <!--=================================================-->
+    <!-- Menu CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/bower_components/sidebar-nav/dist/sidebar-nav.min.css">
 
-    <!--Pace - Page Load Progress Par [OPTIONAL]-->
-    <link href="<?php echo base_url()."assets/";?>plugins/pace/pace.min.css" rel="stylesheet">
-    <script src="<?php echo base_url()."assets/";?>plugins/pace/pace.min.js"></script>
+    <!-- toast CSS -->
+    
+    <!-- animation CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/css/animate.css">
 
+    <!-- Custom CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/css/style.css">
 
-    <!--jQuery [ REQUIRED ]-->
-    <script src="<?php echo base_url()."assets/";?>js/jquery.min.js"></script>
+    <!-- color CSS -->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/css/colors/default.css">
 
+    <!--helper CSS-->
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/admin/global/plugins/froiden-helper/helper.css">
 
-    <!--BootstrapJS [ RECOMMENDED ]-->
-    <script src="<?php echo base_url()."assets/";?>js/bootstrap.min.js"></script>
+    <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/css/custom.css">
 
+    <style>
+        .sidebar #side-menu .user-pro {
+            background: url(<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/images/profile-menu.png) center center/cover no-repeat;
+        }
+    </style>
+        <link media="all" type="text/css" rel="stylesheet" href="<?php echo base_url()."assets/fitsigma/";?>/fitsigma_customer/bower_components/morrisjs/morris.css">
 
-    <!--NiftyJS [ RECOMMENDED ]-->
-    <script src="<?php echo base_url()."assets/";?>js/nifty.min.js"></script>
-
-
-
-
-
-
-    <!--=================================================-->
-
-    <!--Demo script [ DEMONSTRATION ]-->
-    <script src="<?php echo base_url()."assets/";?>js/demo/nifty-demo.min.js"></script>
-
-
-    <!--Morris.js [ OPTIONAL ]-->
-    <script src="<?php echo base_url()."assets/";?>plugins/morris-js/morris.min.js"></script>
-    <script src="<?php echo base_url()."assets/";?>plugins/morris-js/raphael-js/raphael.min.js"></script>
-
-
-    <!--Sparkline [ OPTIONAL ]-->
-    <script src="<?php echo base_url()."assets/";?>plugins/sparkline/jquery.sparkline.min.js"></script>
-
-
-    <!--Specify page [ SAMPLE ]-->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     
     </head>
     <body>

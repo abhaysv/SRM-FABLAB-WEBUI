@@ -40,6 +40,32 @@ class Main extends CI_Controller {
             $this->load->view('userprofile', $data);
             $this->load->view('footer');
 	}
+	public function dashboard()
+	{   
+            if(empty($this->session->userdata['email'])){
+                redirect(site_url().'main/login/');
+            }            
+            /*front page*/
+            $data = $this->session->userdata;
+             
+            $this->load->view('header_ucp');            
+            $this->load->view('dashboard', $data);
+            $this->load->view('footer');
+    }
+    public function subscriptions()
+	{   
+            if(empty($this->session->userdata['email'])){
+                redirect(site_url().'main/login/');
+            }            
+            /*front page*/
+            $data = $this->session->userdata;
+             
+            $this->load->view('header_ucp');            
+            $this->load->view('subscriptions', $data);
+            $this->load->view('footer');
+    }
+    
+	
     function accept_terms() {
         if (isset($_POST['accept_terms'])) return true;
         $this->form_validation->set_message('accept_terms', '<font color="red"><br>PLEASE AGREE TO OUT TEAMS AND CONDITIONS.</font>');
@@ -186,7 +212,7 @@ class Main extends CI_Controller {
                 foreach($userInfo as $key=>$val){
                     $this->session->set_userdata($key, $val);
                 }
-                redirect(site_url().'assets/complete.html');
+                redirect(site_url().'main/dashboard');
             }
             
         }
